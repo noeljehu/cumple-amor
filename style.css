@@ -1,3 +1,4 @@
+/* Fondo suave */
 body {
   margin: 0;
   padding: 0;
@@ -11,11 +12,13 @@ body {
   overflow: hidden;
 }
 
+/* Contenedor */
 .container {
   text-align: center;
   padding: 20px;
 }
 
+/* Título */
 .titulo {
   font-family: 'Great Vibes', cursive;
   font-size: 3rem;
@@ -24,6 +27,7 @@ body {
   opacity: 0;
 }
 
+/* Botón */
 .boton {
   padding: 12px 24px;
   font-size: 1.1rem;
@@ -39,20 +43,7 @@ body {
   background-color: #e83e8c;
 }
 
-.carta {
-  max-width: 500px;
-  margin: 30px auto;
-  background: white;
-  border-radius: 16px;
-  padding: 25px;
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  opacity: 0;
-  transform: translateY(50px);
-}
-
+/* Corazones flotantes */
 .corazones {
   position: absolute;
   top: 0;
@@ -61,5 +52,19 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 10;
 }
 
+/* Mensaje final */
+.mensaje-final {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #d6336c;
+  opacity: 0;
+  z-index: 20;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
